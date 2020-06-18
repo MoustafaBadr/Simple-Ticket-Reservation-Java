@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="695" prefWidth="1350" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <AnchorPane prefHeight="699.0" prefWidth="1354.0" style="-fx-background-color: #d3ebed;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="95.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/6-128.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="412.0" onAction="#Editclients" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="العــــملاء" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="324.0" layoutY="411.0" onAction="#EditPrices" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="الســــــعر" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="100.0" fitWidth="113.0" layoutX="356.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/shoppingcarts_128.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="570.0" layoutY="412.0" onAction="#EditRanks" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="الرتـــــــــبة" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="595.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/User-Administrator-Blue-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="852.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1478068594_EditDocument.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="827.0" layoutY="411.0" onAction="#Editservice" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="الخــــــدمات" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="1118.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/user_manage.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="1093.0" layoutY="412.0" onAction="#EditUsers" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="المســــتخدمين" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

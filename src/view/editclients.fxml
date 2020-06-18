@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="576.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditclientsController">
+   <children>
+      <JFXTextField fx:id="firstname" layoutX="385.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" maxWidth="220.0" minWidth="149.0" prefHeight="31.0" prefWidth="220.0" />
+      <JFXComboBox fx:id="ranks" layoutX="737.0" layoutY="37.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="138.0" />
+      <Text layoutX="872.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الرتبة" textAlignment="CENTER" wrappingWidth="138.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="592.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الاسم" textAlignment="CENTER" wrappingWidth="82.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="retrieve" buttonType="RAISED" layoutX="286.0" layoutY="30.0" onAction="#Searchclient" prefHeight="39.0" prefWidth="82.0" ripplerFill="#e7ea20" style="-fx-background-color: #e7ea20;" text="بحــــث" textFill="#0d0d0d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="815.0" layoutY="492.0" onAction="#Updateclient" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #30A9DE;" text="تعديل" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="delete" buttonType="RAISED" layoutX="715.0" layoutY="492.0" onAction="#Deleteclient" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #e61717;" text="حذف" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="save" buttonType="RAISED" layoutX="914.0" layoutY="492.0" onAction="#Saveclient" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #13bf41;" text="حفظ" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="clienttable" layoutX="1.0" layoutY="82.0" prefHeight="495.0" prefWidth="702.0">
+        <columns>
+          <TableColumn fx:id="colmnphone" prefWidth="105.0" text="رقم المحمول " />
+          <TableColumn fx:id="colmnmail" prefWidth="154.0" text="الرقم العسكري" />
+            <TableColumn fx:id="colmnnational" prefWidth="173.0" text="الرقم القومي" />
+            <TableColumn fx:id="colmnname" prefWidth="134.0" text="الاسم" />
+            <TableColumn fx:id="colmnrank" prefWidth="82.0" text="الرتبة" />
+            <TableColumn fx:id="colmnid" prefWidth="53.0" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="nationalcode" layoutX="727.0" layoutY="147.0" nodeOrientation="RIGHT_TO_LEFT" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" />
+      <JFXTextField fx:id="mailid" layoutX="728.0" layoutY="221.0" nodeOrientation="RIGHT_TO_LEFT" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" />
+      <JFXTextField fx:id="phonenum" layoutX="729.0" layoutY="309.0"  nodeOrientation="RIGHT_TO_LEFT" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" />
+      <Text layoutX="889.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الرقــــم القومي" textAlignment="CENTER" wrappingWidth="101.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="885.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الرقــم العسكري" textAlignment="CENTER" wrappingWidth="108.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="885.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="رقــــــم المحمول " textAlignment="CENTER" wrappingWidth="117.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#BackButton" text="Back">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

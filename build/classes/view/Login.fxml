@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="310.0" scaleShape="false" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <JFXButton fx:id="login" buttonType="RAISED" layoutX="63.0" layoutY="258.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="181.0" style="-fx-background-color: #30A9DE;" text="دخـــول" textFill="#fcfafa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="pass" focusColor="#30a9de" labelFloat="true" layoutX="53.0" layoutY="186.0" maxWidth="470.0" minWidth="146.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="200.0" promptText="رقم السر">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="name" focusColor="#30a9de" labelFloat="true" layoutX="54.0" layoutY="127.0" maxWidth="457.0" minWidth="153.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="200.0" promptText="اسم المستخدم">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="85.0" fitWidth="77.0" layoutX="109.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

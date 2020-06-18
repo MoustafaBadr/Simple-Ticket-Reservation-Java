@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServicelimitController">
+   <children>
+      <Text layoutX="409.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الرتبة" textAlignment="CENTER" wrappingWidth="138.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="ranks" layoutX="296.0" layoutY="25.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="138.0" />
+      <Text layoutX="173.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="عـدد البونات" textAlignment="CENTER" wrappingWidth="117.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TableView fx:id="limittable" layoutX="35.0" layoutY="88.0" prefHeight="200.0" prefWidth="241.0">
+        <columns>
+          <TableColumn fx:id="colmnum" prefWidth="120.0" text="العــــــــدد" />
+          <TableColumn fx:id="colmrank" prefWidth="122.0" text="الرتــــــبة" />
+            <TableColumn fx:id="colmid" prefWidth="66.0" text="id" visible="false" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="405.0" layoutY="96.0" onAction="#Savenum" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #13bf41;" text="حفظ" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="405.0" layoutY="238.0" onAction="#Deletenum" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #e61717;" text="حذف" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="405.0" layoutY="168.0" onAction="#Updatenum" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #30A9DE;" text="تعديل" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="bonnum" layoutX="29.0" layoutY="22.0" nodeOrientation="RIGHT_TO_LEFT" />
+   </children>
+</AnchorPane>

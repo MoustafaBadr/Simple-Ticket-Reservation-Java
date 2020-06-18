@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CasherController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="clienttable" layoutX="52.0" layoutY="159.0" prefHeight="226.0" prefWidth="691.0">
+               <columns>
+                  <TableColumn fx:id="colmnphone" prefWidth="105.0" text="رقم المحمول " />
+                  <TableColumn fx:id="colmnmail" prefWidth="154.0" text="الرقم العسكري" />
+                  <TableColumn fx:id="colmnnational" prefWidth="173.0" text="الرقم القومي" />
+                  <TableColumn fx:id="colmnname" prefWidth="174.0" text="الاسم" />
+                  <TableColumn fx:id="colmnrank" prefWidth="86.0" text="الرتبة" />
+                  <TableColumn fx:id="colmnid" prefWidth="78.0" text="id" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="retrieve" buttonType="RAISED" layoutX="237.0" layoutY="98.0" onAction="#Searchclient" prefHeight="39.0" prefWidth="82.0" ripplerFill="#e7ea20" style="-fx-background-color: #e7ea20;" text="بحــــث" textFill="#0d0d0d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="firstname" blendMode="DARKEN" layoutX="350.0" layoutY="97.0" maxWidth="257.0" minWidth="149.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="257.0" />
+            <Text layoutX="617.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الاسم" textAlignment="CENTER" wrappingWidth="82.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="547.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="اجمـــــالى الخدمـــات " textAlignment="CENTER" wrappingWidth="149.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="totalservice" layoutX="437.0" layoutY="25.0" maxWidth="220.0" minWidth="62.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="106.0" />
+            <JFXTextField fx:id="rank" layoutX="414.0" layoutY="419.0" maxWidth="149.0" minWidth="149.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="149.0" />
+            <Text layoutX="561.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الرتبة" textAlignment="CENTER" wrappingWidth="138.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="servicenumber" layoutX="415.0" layoutY="471.0" nodeOrientation="RIGHT_TO_LEFT" promptText="العــــدد" unFocusColor="#0d0d0d" />
+            <Text layoutX="244.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="التـــــاريخ" textAlignment="CENTER" wrappingWidth="117.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="savebutton" buttonType="RAISED" layoutX="128.0" layoutY="98.0" onAction="#printing" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #13bf41;" text="طــباعـــة" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="totalprice" layoutX="118.0" layoutY="473.0" maxWidth="149.0" minWidth="138.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="149.0" />
+            <JFXTextField fx:id="name" layoutX="118.0" layoutY="418.0" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" />
+            <Text layoutX="265.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الاجــــــمالى" textAlignment="CENTER" wrappingWidth="117.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="570.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="عـدد البونات" textAlignment="CENTER" wrappingWidth="117.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="279.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الاســــم" textAlignment="CENTER" wrappingWidth="101.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="date" layoutX="90.0" layoutY="19.0" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
